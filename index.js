@@ -40,6 +40,7 @@ switch (valor_escolha) {
         for (let Dados of dados_inflacao){            
             console.log(`\n${label_ano.padEnd(40, '.')} ${Dados.ano}\n${label_IPCA.padEnd(40, '.')}${Dados.ipca}%\n`);
         }     
+        break;
     case "3" :
         let Salario_anterior = null;
         let diferenca_salarial = null;
@@ -58,7 +59,6 @@ switch (valor_escolha) {
                 let resultado = `\n${label_ano.padEnd(40, '.')} ${Dados.ano}\n`;
                 resultado += `${label_salario.padEnd(40, '.')} ${salario_formatado}\n`;
                 resultado += `${label_crescimento_salarial.padEnd(40, '.')} ${percentual_de_crescimento.toFixed(2)}%\n`;
-                resultado += `${diferenca_salarial } \n`;
                 resultado += `${label_IPCA.padEnd(40, '.')}${Dados.ipca}%\n`;
                 console.log(resultado);
                 Salario_anterior = Dados.salario;
