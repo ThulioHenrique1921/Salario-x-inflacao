@@ -68,4 +68,3 @@ switch (valor_escolha) {
     default: 
     console.log('Opção inválida...');
 }
-
